@@ -9,5 +9,3 @@ Check out following documents:
 - Using Transport UDFs: [docs/using-transport-udfs.md](/docs/using-transport-udfs.md)
 
 ### How do I disable tests for a particular platform when using the Transport test framework?
-
-[TODO]

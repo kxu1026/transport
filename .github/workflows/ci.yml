@@ -36,9 +36,12 @@ jobs:
       - name: 3. Perform build
         run: |
            ./gradlew build
-           ./gradlew -p transportable-udfs-examples clean build -s
 
-      - name: 4. Perform release
+      - name: 4. Perform build Examples
+        run: |
+          ./gradlew -p transportable-udfs-examples clean build -s
+
+      - name: 5. Perform release
         # Release job, only for pushes to the main development branch
         if: github.event_name == 'push'
           && github.ref == 'refs/heads/master'
